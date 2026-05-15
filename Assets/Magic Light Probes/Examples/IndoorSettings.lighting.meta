@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 49748d4d919865a4ea3132da4bccc10f
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 4890085278179872738
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 157812
+  packageName: Magic Light Probes
+  packageVersion: 1.96.4
+  assetPath: Assets/Magic Light Probes/Examples/IndoorSettings.lighting
+  uploadId: 815908

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: ee091c20fad18b6418c48aab8ff29c09
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 4890085278179872738
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 157812
+  packageName: Magic Light Probes
+  packageVersion: 1.96.4
+  assetPath: Assets/Magic Light Probes/Examples/DemoSettings.lighting
+  uploadId: 815908

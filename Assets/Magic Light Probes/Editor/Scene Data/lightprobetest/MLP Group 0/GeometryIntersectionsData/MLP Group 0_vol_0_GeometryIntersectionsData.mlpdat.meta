@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 42cd2537acfca5746bae0e440648deb5
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 157812
+  packageName: Magic Light Probes
+  packageVersion: 1.96.4
+  assetPath: Assets/Magic Light Probes/Editor/Scene Data/lightprobetest/MLP Group
+    0/GeometryIntersectionsData/MLP Group 0_vol_0_GeometryIntersectionsData.mlpdat
+  uploadId: 815908

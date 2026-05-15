@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 6f34297befac2f04bb60496ed0ef11ed
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 157812
+  packageName: Magic Light Probes
+  packageVersion: 1.96.4
+  assetPath: Assets/Magic Light Probes/Examples/Materials/Checker1.mat
+  uploadId: 815908

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 541c2301234ebf54686840d819b25248
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 4890085278179872738
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 157812
+  packageName: Magic Light Probes
+  packageVersion: 1.96.4
+  assetPath: Assets/Magic Light Probes/Examples/Pobes In PrefabsSettings.lighting
+  uploadId: 815908

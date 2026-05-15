@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 9221d127f2d33154da3265d865adacbe
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 4890085278179872738
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 157812
+  packageName: Magic Light Probes
+  packageVersion: 1.96.4
+  assetPath: Assets/Magic Light Probes/Examples/Large SceneSettings.lighting
+  uploadId: 815908
