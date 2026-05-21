@@ -1,0 +1,163 @@
+using UnityEngine;
+using UnityEngine.InputSystem;
+
+public class PlayerMovement : MonoBehaviour
+{
+    private InputSystem_Actions action;
+    [SerializeField] private Transform neckBone, camPoint;
+    private Animator anim;
+    private Camera cam;
+    private float neck_bone_target = 0.0f;
+    const float BREAK_GROUNDED_TIMER = 0.1f;  //How much time should pass before we say it's not grounded
+    float is_grounded_time = 0.0f;
+    float neck_offset_angle = 0.0f;
+    private const float JUMP_FORCE = 10.0f;
+    private const float ROTATE_X = 45.0f;
+    private const float ROTATE_Y = 45.0f;
+    private const float MIN_WALK_SPEED = 0.5f;
+    private const float MAX_WALK_SPEED = 2.75f;
+    private const float WALK_ACCEL = 7.0f;
+    float current_gravity = 0.0f;
+
+    const float DEFAULT_ROTATE_Z = 7.5f;
+    protected Vector3 currentAccel = Vector3.zero;
+    protected Vector2 MoveVec = Vector2.zero;
+
+
+    private CharacterController cc;
+
+    private void Awake()
+    {
+        action = new InputSystem_Actions();
+        action.Player.Jump.performed += Jump_performed;
+        action.Player.Look.performed += Look_performed;
+        action.Player.Enable();
+    }
+
+    
+
+    private void Look_performed(InputAction.CallbackContext obj)
+    {
+        Vector2 axis = obj.ReadValue<Vector2>();
+        axis.y *= -1.0f;
+        if (axis.y > 0.0f)
+            neck_offset_angle = Mathf.MoveTowardsAngle(neck_offset_angle, 45.0f, axis.y * ROTATE_Y * Time.deltaTime);
+        if (axis.y < 0.0f)
+            neck_offset_angle = Mathf.MoveTowardsAngle(neck_offset_angle, -45.0f, Mathf.Abs(axis.y) * ROTATE_Y * Time.deltaTime);
+        transform.Rotate(Vector3.up * axis.x * ROTATE_X * Time.deltaTime, Space.Self);
+
+
+    }
+
+
+    private void Jump_performed(InputAction.CallbackContext obj)
+    {
+        if (current_gravity > 0.0f)  //Don't double tap
+            return;
+        if (is_grounded_time > 0.0f)
+            current_gravity = JUMP_FORCE;
+    }
+
+    
+
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
+    {
+        
+    }
+    
+
+
+    private void LateUpdate()
+    {
+        if (!Mathf.Approximately(neck_bone_target, 0.0f))
+        {
+            Vector3 localAngles = neckBone.localEulerAngles;
+
+            localAngles.z = DEFAULT_ROTATE_Z + neck_offset_angle;
+
+            neckBone.localEulerAngles = localAngles;
+        }
+    }
+    
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (cc == null)  //In case the reference gets lost
+            cc = GetComponent<CharacterController>();
+        if (anim == null)
+            anim = GetComponent<Animator>();
+        if (cam == null)
+            cam = Camera.main;
+
+        ProcessMovement();
+        UpdateCamera();
+        ProcessAnimation();
+    }
+
+    void UpdateCamera()
+    {
+        cam.transform.position = camPoint.transform.position;
+        Vector3 rotation = transform.eulerAngles;
+        rotation.x = neck_offset_angle;
+        cam.transform.eulerAngles = rotation;
+    }
+
+    void ProcessAnimation()
+    {
+        anim.SetBool("IsGrounded", (is_grounded_time > 0.0f));
+        anim.SetFloat("MoveAngle", Mathf.Atan2(currentAccel.z, currentAccel.x) * Mathf.Rad2Deg / 360.0f);
+        anim.SetBool("Moving", currentAccel.magnitude > 0.2f);
+    }
+
+    void ProcessMovement()
+    {
+        MoveVec = action.Player.Move.ReadValue<Vector2>();
+        if (cc != null)
+        {
+            if (current_gravity > 0.0f)
+                current_gravity -= 9.8f * Time.deltaTime;
+            if (cc.isGrounded == true && current_gravity <= 0.0f)
+            {
+                is_grounded_time = BREAK_GROUNDED_TIMER;
+                current_gravity = 0.0f;
+            }
+            if (is_grounded_time < 0.0f)
+                current_gravity -= 9.8f * Time.deltaTime;
+
+            if (is_grounded_time > 0.0f)
+                is_grounded_time -= Time.deltaTime;
+
+            
+        }
+        if (MoveVec != Vector2.zero)
+        {
+
+            currentAccel.x += Mathf.Abs(MoveVec.x) * WALK_ACCEL * Time.deltaTime;
+            currentAccel.z += Mathf.Abs(MoveVec.y) * WALK_ACCEL * Time.deltaTime;
+            currentAccel.x = Mathf.Clamp(currentAccel.x, MIN_WALK_SPEED, MAX_WALK_SPEED);
+            currentAccel.z = Mathf.Clamp(currentAccel.z, MIN_WALK_SPEED, MAX_WALK_SPEED);
+
+        }
+        if (Mathf.Approximately(MoveVec.x, 0.0f))
+            currentAccel.x = Mathf.MoveTowards(currentAccel.x, 0.0f, WALK_ACCEL * 6.0f * Time.deltaTime);
+        if (Mathf.Approximately(MoveVec.y, 0.0f))
+            currentAccel.z = Mathf.MoveTowards(currentAccel.z, 0.0f, WALK_ACCEL * 6.0f * Time.deltaTime);
+
+        Vector3 combined_movement = Vector3.zero;
+
+        if (MoveVec.y > 0.0f)
+            combined_movement += transform.forward * currentAccel.z;
+        else
+            combined_movement += -transform.forward * currentAccel.z;
+        if (MoveVec.x > 0.0f)
+            combined_movement += transform.right * currentAccel.x;
+        else
+            combined_movement -= transform.right * currentAccel.x;
+        combined_movement += Vector3.up * current_gravity;
+        cc.Move(combined_movement * Time.deltaTime);
+
+
+    }
+}
