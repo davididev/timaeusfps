@@ -7,7 +7,6 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Transform neckBone, camPoint;
     private Animator anim;
     private Camera cam;
-    private float neck_bone_target = 0.0f;
     const float BREAK_GROUNDED_TIMER = 0.1f;  //How much time should pass before we say it's not grounded
     float is_grounded_time = 0.0f;
     float neck_offset_angle = 0.0f;
@@ -70,7 +69,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void LateUpdate()
     {
-        if (!Mathf.Approximately(neck_bone_target, 0.0f))
+        if (!Mathf.Approximately(neck_offset_angle, 0.0f))
         {
             Vector3 localAngles = neckBone.localEulerAngles;
 

@@ -383,6 +383,71 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1001 &931728313
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2532522443961419676, guid: bda76372da3fc8a4c9cba39d03cf0227, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 40.28424
+      objectReference: {fileID: 0}
+    - target: {fileID: 2532522443961419676, guid: bda76372da3fc8a4c9cba39d03cf0227, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -47.68
+      objectReference: {fileID: 0}
+    - target: {fileID: 2532522443961419676, guid: bda76372da3fc8a4c9cba39d03cf0227, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 16.95316
+      objectReference: {fileID: 0}
+    - target: {fileID: 2532522443961419676, guid: bda76372da3fc8a4c9cba39d03cf0227, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2532522443961419676, guid: bda76372da3fc8a4c9cba39d03cf0227, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.50000006
+      objectReference: {fileID: 0}
+    - target: {fileID: 2532522443961419676, guid: bda76372da3fc8a4c9cba39d03cf0227, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2532522443961419676, guid: bda76372da3fc8a4c9cba39d03cf0227, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.49999994
+      objectReference: {fileID: 0}
+    - target: {fileID: 2532522443961419676, guid: bda76372da3fc8a4c9cba39d03cf0227, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2532522443961419676, guid: bda76372da3fc8a4c9cba39d03cf0227, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 2532522443961419676, guid: bda76372da3fc8a4c9cba39d03cf0227, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 4759930916735469766, guid: bda76372da3fc8a4c9cba39d03cf0227, type: 3}
+      propertyPath: m_Name
+      value: WaterMirror
+      objectReference: {fileID: 0}
+    - target: {fileID: 4759930916735469766, guid: bda76372da3fc8a4c9cba39d03cf0227, type: 3}
+      propertyPath: m_TagString
+      value: PortalCam
+      objectReference: {fileID: 0}
+    - target: {fileID: 5294776246115269975, guid: bda76372da3fc8a4c9cba39d03cf0227, type: 3}
+      propertyPath: m_LayerMask.m_Bits
+      value: 1831
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bda76372da3fc8a4c9cba39d03cf0227, type: 3}
 --- !u!1 &1282324546
 GameObject:
   m_ObjectHideFlags: 0
@@ -1003,3 +1068,4 @@ SceneRoots:
   - {fileID: 606550292}
   - {fileID: 1401678511}
   - {fileID: 1282324547}
+  - {fileID: 931728313}
