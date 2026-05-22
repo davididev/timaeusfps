@@ -106,7 +106,7 @@ public class PlayerMovement : MonoBehaviour
     void ProcessAnimation()
     {
         anim.SetBool("IsGrounded", (is_grounded_time > 0.0f));
-        anim.SetFloat("MoveAngle", Mathf.Atan2(currentAccel.z, currentAccel.x) * Mathf.Rad2Deg / 360.0f);
+        anim.SetFloat("MoveAngle", Mathf.Atan2(currentAccel.x, currentAccel.z) * Mathf.Rad2Deg / 360.0f);
         anim.SetBool("Moving", currentAccel.magnitude > 0.2f);
     }
 
