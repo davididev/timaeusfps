@@ -5,6 +5,7 @@ public class PlayerMovement : MonoBehaviour
 {
     private InputSystem_Actions action;
     [SerializeField] private Transform neckBone, camPoint;
+    [SerializeField] WeaponHolderJoint weaponholder;
     private Animator anim;
     private Camera cam;
     const float BREAK_GROUNDED_TIMER = 0.1f;  //How much time should pass before we say it's not grounded
@@ -21,6 +22,7 @@ public class PlayerMovement : MonoBehaviour
     const float DEFAULT_ROTATE_Z = 7.5f;
     protected Vector3 currentAccel = Vector3.zero;
     protected Vector2 MoveVec = Vector2.zero;
+    float rotate_lr = 0.0f;
 
 
     private CharacterController cc;
@@ -43,8 +45,9 @@ public class PlayerMovement : MonoBehaviour
             neck_offset_angle = Mathf.MoveTowardsAngle(neck_offset_angle, 45.0f, axis.y * ROTATE_Y * Time.deltaTime);
         if (axis.y < 0.0f)
             neck_offset_angle = Mathf.MoveTowardsAngle(neck_offset_angle, -45.0f, Mathf.Abs(axis.y) * ROTATE_Y * Time.deltaTime);
-        transform.Rotate(Vector3.up * axis.x * ROTATE_X * Time.deltaTime, Space.Self);
 
+        rotate_lr = axis.x;
+        transform.Rotate(Vector3.up * rotate_lr * ROTATE_X * Time.deltaTime, Space.Self);
 
     }
 
@@ -66,7 +69,7 @@ public class PlayerMovement : MonoBehaviour
     }
     
 
-
+    
     private void LateUpdate()
     {
         if (!Mathf.Approximately(neck_offset_angle, 0.0f))
@@ -101,6 +104,7 @@ public class PlayerMovement : MonoBehaviour
         Vector3 rotation = transform.eulerAngles;
         rotation.x = neck_offset_angle;
         cam.transform.eulerAngles = rotation;
+        
     }
 
     void ProcessAnimation()
@@ -158,5 +162,32 @@ public class PlayerMovement : MonoBehaviour
         cc.Move(combined_movement * Time.deltaTime);
 
 
+    }
+
+    void OnAnimatorIK(int layerIndex)
+    {
+        if (anim == null)
+            anim = GetComponent<Animator>();
+
+        WeaponRigidBody cur = weaponholder.CurrentWeapon();
+        if (cur == null)
+        {
+            Debug.Log(Time.time + ": There is no weapon atm.");
+            return;
+        }
+        Debug.DrawLine(transform.position, cur.primaryGrabPoint.position, Color.red, 0.1f);
+
+        anim.SetIKPositionWeight(AvatarIKGoal.RightHand, 1f);
+        anim.SetIKRotationWeight(AvatarIKGoal.RightHand, 1f);
+        anim.SetIKPosition(AvatarIKGoal.RightHand, cur.primaryGrabPoint.position);
+        anim.SetIKRotation(AvatarIKGoal.RightHand, cur.primaryGrabPoint.rotation);
+        if (cur.secondaryGrabPoint != null)
+        {
+            anim.SetIKPositionWeight(AvatarIKGoal.LeftHand, 1f);
+            anim.SetIKRotationWeight(AvatarIKGoal.LeftHand, 1f);
+            anim.SetIKPosition(AvatarIKGoal.LeftHand, cur.secondaryGrabPoint.position);
+            //anim.SetIKRotation(AvatarIKGoal.LeftHand, cur.secondaryGrabPoint.rotation);
+        }
+        anim.feetPivotActive = 1f;
     }
 }
