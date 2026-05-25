@@ -9,9 +9,9 @@ public class PlayerMovement : MonoBehaviour
     private Animator anim;
     private Camera cam;
     const float BREAK_GROUNDED_TIMER = 0.1f;  //How much time should pass before we say it's not grounded
-    float is_grounded_time = 0.0f;
+    float jump_delay_timer = 0.0f;
     float neck_offset_angle = 0.0f;
-    private const float JUMP_FORCE = 10.0f;
+    private const float JUMP_FORCE = 5.0f;
     private const float ROTATE_X = 45.0f;
     private const float ROTATE_Y = 45.0f;
     private const float MIN_WALK_SPEED = 0.5f;
@@ -31,15 +31,15 @@ public class PlayerMovement : MonoBehaviour
     {
         action = new InputSystem_Actions();
         action.Player.Jump.performed += Jump_performed;
-        action.Player.Look.performed += Look_performed;
+        
         action.Player.Enable();
     }
 
     
 
-    private void Look_performed(InputAction.CallbackContext obj)
+    private void Look_performed()
     {
-        Vector2 axis = obj.ReadValue<Vector2>();
+        Vector2 axis = action.Player.Look.ReadValue<Vector2>();
         axis.y *= -1.0f;
         if (axis.y > 0.0f)
             neck_offset_angle = Mathf.MoveTowardsAngle(neck_offset_angle, 45.0f, axis.y * ROTATE_Y * Time.deltaTime);
@@ -54,10 +54,16 @@ public class PlayerMovement : MonoBehaviour
 
     private void Jump_performed(InputAction.CallbackContext obj)
     {
-        if (current_gravity > 0.0f)  //Don't double tap
-            return;
-        if (is_grounded_time > 0.0f)
-            current_gravity = JUMP_FORCE;
+        if(cc.isGrounded)
+        {
+            if (jump_delay_timer <= 0.0f)
+            {
+                jump_delay_timer = BREAK_GROUNDED_TIMER;
+                current_gravity = JUMP_FORCE;
+            }
+        }
+        
+            
     }
 
     
@@ -93,6 +99,7 @@ public class PlayerMovement : MonoBehaviour
         if (cam == null)
             cam = Camera.main;
 
+        Look_performed();
         ProcessMovement();
         UpdateCamera();
         ProcessAnimation();
@@ -109,7 +116,7 @@ public class PlayerMovement : MonoBehaviour
 
     void ProcessAnimation()
     {
-        anim.SetBool("IsGrounded", (is_grounded_time > 0.0f));
+        anim.SetBool("IsGrounded", (jump_delay_timer > 0.0f));
         anim.SetFloat("MoveAngle", Mathf.Atan2(currentAccel.x, currentAccel.z) * Mathf.Rad2Deg / 360.0f);
         anim.SetBool("Moving", currentAccel.magnitude > 0.2f);
     }
@@ -117,20 +124,17 @@ public class PlayerMovement : MonoBehaviour
     void ProcessMovement()
     {
         MoveVec = action.Player.Move.ReadValue<Vector2>();
+
         if (cc != null)
         {
-            if (current_gravity > 0.0f)
-                current_gravity -= 9.8f * Time.deltaTime;
-            if (cc.isGrounded == true && current_gravity <= 0.0f)
+            current_gravity -= 9.8f * Time.deltaTime;
+            if (cc.isGrounded == true && jump_delay_timer <= 0.0f)
             {
-                is_grounded_time = BREAK_GROUNDED_TIMER;
-                current_gravity = 0.0f;
+                current_gravity = -1.0f;
             }
-            if (is_grounded_time < 0.0f)
-                current_gravity -= 9.8f * Time.deltaTime;
 
-            if (is_grounded_time > 0.0f)
-                is_grounded_time -= Time.deltaTime;
+            if (jump_delay_timer >= 0.0f)
+                jump_delay_timer -= Time.deltaTime;
 
             
         }
@@ -153,11 +157,12 @@ public class PlayerMovement : MonoBehaviour
         if (MoveVec.y > 0.0f)
             combined_movement += transform.forward * currentAccel.z;
         else
-            combined_movement += -transform.forward * currentAccel.z;
+            combined_movement -= transform.forward * currentAccel.z;
         if (MoveVec.x > 0.0f)
             combined_movement += transform.right * currentAccel.x;
         else
             combined_movement -= transform.right * currentAccel.x;
+
         combined_movement += Vector3.up * current_gravity;
         cc.Move(combined_movement * Time.deltaTime);
 
