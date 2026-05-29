@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         xmlns:ui="UnityEngine.UIElements" 
+         xmlns:uie="UnityEditor.UIElements"
+         xsi:noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd">
+    
+    <!-- Tile Rule Card Template -->
+    <ui:Template name="TileRuleCard">
+        <ui:VisualElement class="tile-rule-card card" name="tile-rule-container">
+            <!-- Header Row -->
+            <ui:VisualElement class="card-header">
+                <ui:VisualElement class="color-indicator" name="color-indicator"/>
+                <ui:Label class="card-title" name="rule-title" text="Tile Rule"/>
+                
+                <!-- Action Buttons -->
+                <ui:Button class="btn btn-icon visibility-toggle" name="btn-visibility" text="🙉"/>
+                <ui:Button class="btn btn-icon" name="btn-move-up" text="▲"/>
+                <ui:Button class="btn btn-icon" name="btn-move-down" text="▼"/>
+                <ui:Button class="btn" name="btn-select" text="Select"/>
+                <ui:Button class="btn btn-icon btn-danger" name="btn-delete" text="✖"/>
+            </ui:VisualElement>
+            
+            <!-- Expandable Content -->
+            <ui:Foldout name="rule-foldout" text="" value="true">
+                <ui:VisualElement class="card-body">
+                    
+                    <!-- Placement Section -->
+                    <ui:Foldout name="placement-foldout" text="Placement &amp; Tilemap" value="true" class="subsection-foldout">
+                        <ui:VisualElement class="foldout-content">
+                            
+                            <!-- Tile Field -->
+                            <ui:VisualElement class="field-row">
+                                <ui:Label class="field-label" text="Tile"/>
+                                <uie:ObjectField name="tile-field" allow-scene-objects="false"/>
+                                <ui:Button class="btn" name="btn-update" text="Update"/>
+                                <ui:Button class="btn btn-primary" name="btn-export-fbx" text="📦 FBX"/>
+                            </ui:VisualElement>
+                            
+                            <!-- Custom Tilemap -->
+                            <ui:VisualElement class="field-row">
+                                <ui:Toggle name="use-custom-tilemap" label="Custom Map"/>
+                                <uie:ObjectField name="custom-tilemap-field" allow-scene-objects="true"/>
+                            </ui:VisualElement>
+                            
+                            <!-- Y Offset -->
+                            <ui:VisualElement class="field-row">
+                                <ui:Label class="field-label" text="Y Offset"/>
+                                <ui:VisualElement class="y-offset-controls">
+                                    <ui:Button class="btn y-offset-btn" name="btn-y-minus" text="-"/>
+                                    <ui:FloatField name="y-offset-field" class="y-offset-value"/>
+                                    <ui:Button class="btn y-offset-btn" name="btn-y-plus" text="+"/>
+                                </ui:VisualElement>
+                            </ui:VisualElement>
+                            
+                            <!-- Size Y -->
+                            <ui:VisualElement class="field-row">
+                                <ui:Toggle name="fixed-base-toggle" label="Fixed base"/>
+                                <ui:Label class="field-label" text="Size Y"/>
+                                <ui:VisualElement class="y-offset-controls">
+                                    <ui:Button class="btn y-offset-btn" name="btn-size-minus" text="-"/>
+                                    <ui:FloatField name="size-y-field" class="y-offset-value"/>
+                                    <ui:Button class="btn y-offset-btn" name="btn-size-plus" text="+"/>
+                                </ui:VisualElement>
+                            </ui:VisualElement>
+                            
+                        </ui:VisualElement>
+                    </ui:Foldout>
+                    
+                    <!-- Animation Section -->
+                    <ui:Foldout name="animation-foldout" text="Skirt, Move &amp; Deformers" value="false" class="subsection-foldout">
+                        <ui:VisualElement class="foldout-content">
+                            
+                            <!-- Move Controls -->
+                            <ui:Toggle name="enable-move" label="Enable Move"/>
+                            <ui:Vector3Field name="move-offset" label="Move Offset"/>
+                            <ui:FloatField name="move-pause" label="Pause (s)"/>
+                            
+                            <ui:VisualElement class="field-row" style="margin-top: 8px;">
+                                <ui:Button class="btn" name="btn-preview-offset" text="Preview Offset"/>
+                                <ui:Button class="btn" name="btn-preview-anim" text="Preview Animation"/>
+                            </ui:VisualElement>
+                            
+                            <!-- Deformers List -->
+                            <ui:Label class="subsection-header" text="Deformer Objects"/>
+                            <ui:VisualElement name="deformers-list"/>
+                            <ui:Button class="btn btn-primary" name="btn-add-deformer" text="+ Add Deformer"/>
+                            
+                        </ui:VisualElement>
+                    </ui:Foldout>
+                    
+                </ui:VisualElement>
+            </ui:Foldout>
+            
+        </ui:VisualElement>
+    </ui:Template>
+    
+</ui:UXML>

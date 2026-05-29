@@ -1,0 +1,345 @@
+/* QuickTilemapEditor - Modern Dark Theme */
+/* USS Stylesheet for UI Toolkit */
+
+/* ===== CSS Variables (Design Tokens) ===== */
+:root {
+    /* Primary Colors - Pure Black Theme */
+    --color-bg-dark: #0d0d0d;
+    --color-bg-medium: #1a1a1a;
+    --color-bg-light: #252525;
+    --color-bg-card: #1f1f1f;
+    --color-bg-hover: #2a2a2a;
+    
+    /* Accent Colors */
+    --color-accent-primary: #4cc9f0;
+    --color-accent-secondary: #7b2cbf;
+    --color-accent-success: #4ade80;
+    --color-accent-warning: #fbbf24;
+    --color-accent-danger: #f87171;
+    
+    /* Text Colors */
+    --color-text-primary: #e2e8f0;
+    --color-text-secondary: #94a3b8;
+    --color-text-muted: #64748b;
+    
+    /* Border & Shadows */
+    --color-border: #334155;
+    --color-border-focus: #4cc9f0;
+    
+    /* Spacing */
+    --spacing-xs: 4px;
+    --spacing-sm: 8px;
+    --spacing-md: 12px;
+    --spacing-lg: 16px;
+    --spacing-xl: 24px;
+    
+    /* Border Radius */
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 12px;
+}
+
+/* ===== Base Styles ===== */
+.quick-tile-inspector {
+    background-color: var(--color-bg-dark);
+    padding: var(--spacing-md);
+}
+
+/* ===== Typography ===== */
+.section-header {
+    font-size: 16px;
+    -unity-font-style: bold;
+    color: var(--color-text-primary);
+    margin-bottom: var(--spacing-sm);
+    padding-bottom: var(--spacing-xs);
+    border-bottom-width: 1px;
+    border-bottom-color: var(--color-border);
+}
+
+.subsection-header {
+    font-size: 13px;
+    -unity-font-style: bold;
+    color: var(--color-accent-primary);
+    margin-top: var(--spacing-sm);
+    margin-bottom: var(--spacing-xs);
+}
+
+.label-primary {
+    color: var(--color-text-primary);
+    font-size: 12px;
+}
+
+.label-secondary {
+    color: var(--color-text-secondary);
+    font-size: 11px;
+}
+
+.label-muted {
+    color: var(--color-text-muted);
+    font-size: 10px;
+    -unity-font-style: italic;
+}
+
+/* ===== Card Component ===== */
+.card {
+    background-color: var(--color-bg-card);
+    border-radius: var(--radius-md);
+    border-width: 1px;
+    border-color: var(--color-border);
+    padding: var(--spacing-md);
+    margin-bottom: var(--spacing-sm);
+    transition-duration: 0.15s;
+}
+
+.card:hover {
+    border-color: var(--color-accent-primary);
+    background-color: var(--color-bg-hover);
+}
+
+.card-selected {
+    border-color: var(--color-accent-success);
+    border-width: 2px;
+    background-color: rgba(74, 222, 128, 0.1);
+}
+
+.card-header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--spacing-sm);
+}
+
+.card-title {
+    font-size: 13px;
+    -unity-font-style: bold;
+    color: var(--color-text-primary);
+    flex-grow: 1;
+}
+
+.card-body {
+    padding-left: var(--spacing-sm);
+}
+
+/* ===== Button Styles ===== */
+.btn {
+    background-color: var(--color-bg-light);
+    border-radius: var(--radius-sm);
+    border-width: 1px;
+    border-color: var(--color-border);
+    padding: var(--spacing-xs) var(--spacing-sm);
+    color: var(--color-text-primary);
+    font-size: 11px;
+    -unity-text-align: middle-center;
+    transition-duration: 0.1s;
+}
+
+.btn:hover {
+    background-color: var(--color-bg-hover);
+    border-color: var(--color-accent-primary);
+}
+
+.btn:active {
+    background-color: var(--color-accent-primary);
+    color: var(--color-bg-dark);
+}
+
+.btn-primary {
+    background-color: var(--color-accent-primary);
+    color: var(--color-bg-dark);
+    border-color: var(--color-accent-primary);
+    -unity-font-style: bold;
+}
+
+.btn-primary:hover {
+    background-color: #38b6db;
+}
+
+.btn-success {
+    background-color: var(--color-accent-success);
+    color: var(--color-bg-dark);
+    border-color: var(--color-accent-success);
+}
+
+.btn-danger {
+    background-color: transparent;
+    color: var(--color-accent-danger);
+    border-color: var(--color-accent-danger);
+}
+
+.btn-danger:hover {
+    background-color: var(--color-accent-danger);
+    color: white;
+}
+
+.btn-icon {
+    width: 28px;
+    height: 28px;
+    padding: 0;
+    font-size: 14px;
+    -unity-text-align: middle-center;
+}
+
+.btn-add {
+    background-color: var(--color-accent-primary);
+    color: var(--color-bg-dark);
+    height: 32px;
+    font-size: 13px;
+    -unity-font-style: bold;
+    border-radius: var(--radius-md);
+    margin-top: var(--spacing-sm);
+}
+
+/* ===== Input Fields ===== */
+.field-row {
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: var(--spacing-xs);
+}
+
+.field-label {
+    width: 80px;
+    color: var(--color-text-secondary);
+    font-size: 11px;
+}
+
+.field-input {
+    flex-grow: 1;
+    background-color: var(--color-bg-medium);
+    border-radius: var(--radius-sm);
+    border-width: 1px;
+    border-color: var(--color-border);
+    color: var(--color-text-primary);
+    padding: var(--spacing-xs);
+}
+
+.field-input:focus {
+    border-color: var(--color-accent-primary);
+}
+
+/* ===== Foldout ===== */
+.foldout-header {
+    background-color: var(--color-bg-medium);
+    border-radius: var(--radius-sm);
+    padding: var(--spacing-sm);
+    margin-bottom: var(--spacing-xs);
+}
+
+.foldout-content {
+    padding-left: var(--spacing-md);
+    margin-left: var(--spacing-sm);
+    border-left-width: 2px;
+    border-left-color: var(--color-border);
+}
+
+/* ===== Color Indicator ===== */
+.color-indicator {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border-width: 2px;
+    border-color: rgba(255, 255, 255, 0.3);
+    margin-right: var(--spacing-sm);
+}
+
+/* ===== Toolbar ===== */
+.toolbar {
+    flex-direction: row;
+    background-color: var(--color-bg-medium);
+    border-radius: var(--radius-md);
+    padding: var(--spacing-xs);
+    margin-bottom: var(--spacing-md);
+}
+
+.toolbar-btn {
+    flex-grow: 1;
+    height: 32px;
+    background-color: transparent;
+    border-width: 0;
+    border-radius: var(--radius-sm);
+    color: var(--color-text-secondary);
+    font-size: 12px;
+    transition-duration: 0.1s;
+}
+
+.toolbar-btn:hover {
+    background-color: var(--color-bg-hover);
+    color: var(--color-text-primary);
+}
+
+.toolbar-btn-active {
+    background-color: var(--color-accent-primary);
+    color: var(--color-bg-dark);
+    -unity-font-style: bold;
+}
+
+/* ===== Tile Rule Specific ===== */
+.tile-rule-card {
+    border-left-width: 4px;
+}
+
+.tile-rule-preview {
+    width: 48px;
+    height: 48px;
+    background-color: var(--color-bg-medium);
+    border-radius: var(--radius-sm);
+    border-width: 1px;
+    border-color: var(--color-border);
+    margin-right: var(--spacing-sm);
+}
+
+.y-offset-controls {
+    flex-direction: row;
+    align-items: center;
+}
+
+.y-offset-btn {
+    width: 24px;
+    height: 24px;
+    font-size: 14px;
+    -unity-font-style: bold;
+}
+
+.y-offset-value {
+    width: 50px;
+    -unity-text-align: middle-center;
+    background-color: var(--color-bg-medium);
+    border-radius: var(--radius-sm);
+    margin: 0 var(--spacing-xs);
+}
+
+/* ===== Visibility Toggle ===== */
+.visibility-toggle {
+    width: 28px;
+    height: 28px;
+    background-color: transparent;
+    border-width: 0;
+    font-size: 16px;
+    opacity: 0.7;
+}
+
+.visibility-toggle:hover {
+    opacity: 1;
+}
+
+/* ===== Empty State ===== */
+.empty-state {
+    padding: var(--spacing-xl);
+    -unity-text-align: middle-center;
+}
+
+.empty-state-text {
+    color: var(--color-text-muted);
+    font-size: 14px;
+    -unity-font-style: italic;
+}
+
+/* ===== Animations (via transitions) ===== */
+.fade-in {
+    transition-property: opacity;
+    transition-duration: 0.2s;
+}
+
+.slide-down {
+    transition-property: height, opacity;
+    transition-duration: 0.15s;
+}

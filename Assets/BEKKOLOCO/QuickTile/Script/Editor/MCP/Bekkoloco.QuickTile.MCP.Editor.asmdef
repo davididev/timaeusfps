@@ -1,0 +1,26 @@
+{
+    "name": "Bekkoloco.QuickTile.MCP.Editor",
+    "rootNamespace": "Bekkoloco.QuickTile.MCP",
+    "references": [
+        "Unity.AI.MCP.Editor"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [
+        "UNITY_AI_ASSISTANT_AVAILABLE"
+    ],
+    "versionDefines": [
+        {
+            "name": "com.unity.ai.assistant",
+            "expression": "",
+            "define": "UNITY_AI_ASSISTANT_AVAILABLE"
+        }
+    ],
+    "noEngineReferences": false
+}

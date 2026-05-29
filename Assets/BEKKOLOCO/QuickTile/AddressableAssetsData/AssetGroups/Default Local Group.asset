@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Default Local Group
+  m_EditorClassIdentifier: 
+  m_GroupName: Default Local Group
+  m_GUID: 70cf6c71d6a4e4519916892474cf1e00
+  m_SerializeEntries:
+  - m_GUID: 1e8803481fc774c149578bf561666794
+    m_Address: Assets/BEKKOLOCO/QuickTile/Prefabs/Props/Cute Temple Golem.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 69330c48fdcb94267a7a44f77edc48f6
+    m_Address: Assets/BEKKOLOCO/QuickTile/Prefabs/Props/Demo path Object.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8ac31f7b7ba8a4b58ab8c6dc1b227636
+    m_Address: Assets/BEKKOLOCO/QuickTile/Prefabs/Props/Short_slope_2.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 2396aeac4e28544178d45674a82c74bc, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: fa97ddb9260af497d93f3fdf749b78d6, type: 2}
+    - {fileID: 11400000, guid: bd79c2de255a941e6ab23b9d77aa59de, type: 2}

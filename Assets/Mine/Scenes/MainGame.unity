@@ -679,6 +679,43 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1411999909}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!84 &747846785
+RenderTexture:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_IsAlphaChannelOptional: 0
+  serializedVersion: 6
+  m_Width: 256
+  m_Height: 256
+  m_AntiAliasing: 1
+  m_MipCount: -1
+  m_DepthStencilFormat: 0
+  m_ColorFormat: 4
+  m_MipMap: 0
+  m_GenerateMips: 1
+  m_SRGB: 1
+  m_UseDynamicScale: 0
+  m_UseDynamicScaleExplicit: 0
+  m_BindMS: 0
+  m_EnableCompatibleFormat: 1
+  m_EnableRandomWrite: 1
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 1
+    m_Aniso: 1
+    m_MipBias: 0
+    m_WrapU: 1
+    m_WrapV: 1
+    m_WrapW: 1
+  m_Dimension: 2
+  m_VolumeDepth: 1
+  m_ShadowSamplingMode: 2
 --- !u!1 &831795586
 GameObject:
   m_ObjectHideFlags: 0
@@ -12035,6 +12072,181 @@ Transform:
   - {fileID: 1411999909}
   m_Father: {fileID: 1362390760}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1898221401
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1898221404}
+  - component: {fileID: 1898221403}
+  - component: {fileID: 1898221402}
+  m_Layer: 0
+  m_Name: QuickTilemapEditor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1898221402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1898221401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88f6cba501db24277a352dd6984c3bf9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Bekkoloco.QuickTilemapEditor
+  isVirtual: 1
+  targetTilemap: {fileID: 0}
+  activeTile: {fileID: 0}
+  recentTiles: []
+  gridSize: {x: 32, y: 32, z: 1}
+  cellSize: {x: 1, y: 1, z: 1}
+  editorEnabled: 1
+  paintOnlyOnTiles: 1
+  brushSize: 1
+  useCustomSize: 0
+  brushShape: 0
+  useHexGrid: 0
+  gridStyle: 0
+  instantiatedGameObjects: []
+  levelNames: []
+  levels:
+  - levelName: Level2
+    jsonFile: {fileID: 4900000, guid: eafbbdf58af2b4c379911ca9d9072cd0, type: 3}
+    properties: []
+    paintedTextures: []
+    centerOriginToSurfaceMass: 1
+  - levelName: Level3
+    jsonFile: {fileID: 4900000, guid: 107b81a7ba7a34e0c980f3af746b24ac, type: 3}
+    properties: []
+    paintedTextures: []
+    centerOriginToSurfaceMass: 1
+  texturePaintRules: []
+  selectedTextureRule:
+    ruleName: 
+    textureIndex: 0
+    material: {fileID: 0}
+    albedo: {fileID: 0}
+    normal: {fileID: 0}
+    height: {fileID: 0}
+    emission: {fileID: 0}
+    emissionColor: {r: 0, g: 0, b: 0, a: 1}
+    textureScale: 1
+    blendSharpness: 1
+    noiseScale: 1
+    noiseType: 0
+    removeVegetation: 0
+    vegetationEntries: []
+  needsRefreshPreview: 0
+  paintMaskTexture: {fileID: 747846785}
+  blendPreviewMaterial: {fileID: 0}
+  loadedJsonContent: 
+  gridScale: 1
+  autoReloadOnLevelChange: 0
+  centerOriginToSurfaceMass: 1
+  selectedGameObjectRuleIndex: 2
+  selectedTileRuleIndex: -1
+  selectedTextureRuleIndex: -1
+  previewObject: {fileID: 0}
+  selectedPathIndex: -1
+  currentLevelIndex: 1
+  skirtsNeedRefresh: 0
+  tileRules: []
+  gameObjectRules:
+  - id: b79c13b8-9b2b-47ab-862d-ce9554ae795a
+    prefab: {fileID: 5775202640739685381, guid: c7f276f1cecfbb64b9a4d8db59f28fb2, type: 3}
+    prefabResourcePath: 
+    color: {r: 0.94676167, g: 0.53799886, b: 0.73994374, a: 1}
+    randomizeRotationY: 0
+    placeOnGround: 1
+    placementSurface: 1
+    yOffset: 0
+    isVisible: 1
+    followDeformationY: 0
+    vegetationExclusionRadius: 1
+    instanceOffsets: []
+    legacyYPosition: 0
+  - id: c07fbc26-7b36-4b5e-a816-9d6bdf91d6fe
+    prefab: {fileID: 1442904846905456882, guid: 77765dbf1ff2d8a44ac19fada9edb191, type: 3}
+    prefabResourcePath: 
+    color: {r: 0.45742553, g: 0.83828926, b: 0.87529147, a: 1}
+    randomizeRotationY: 0
+    placeOnGround: 1
+    placementSurface: 0
+    yOffset: 0
+    isVisible: 0
+    followDeformationY: 0
+    vegetationExclusionRadius: 1
+    instanceOffsets: []
+    legacyYPosition: 0
+  - id: 488f4b41-fb40-456b-b1f0-f7cb2b62b774
+    prefab: {fileID: 560436188078907915, guid: 73ae105e16904cd42bc3afd2c469d865, type: 3}
+    prefabResourcePath: 
+    color: {r: 0.5798369, g: 0.65632933, b: 0.8330702, a: 1}
+    randomizeRotationY: 0
+    placeOnGround: 1
+    placementSurface: 1
+    yOffset: 0
+    isVisible: 1
+    followDeformationY: 0
+    vegetationExclusionRadius: 1
+    instanceOffsets: []
+    legacyYPosition: 0
+  paths: []
+  placedObjects: []
+  liveSyncWhileDragging: 1
+  autoSave: 1
+  autoSaveDebounceSec: 1
+  autoSaveIntervalSec: 20
+  autoSaveBeforePlay: 1
+  autoSaveFolder: Assets/BEKKOLOCO/QuickTile/Resources/Levels/Autosaves
+  autoSaveKeep: 10
+  autoSavePrefix: QT_Auto
+  showAutoSaveNotifications: 1
+  maxFullLevelRT: 2048
+  updateFullLevelInEditor: 1
+  levelRenderSize: {x: 256, y: 256, z: 1}
+  rebuildPreviewOnPaintOnly: 1
+  enableRuntimeSmallMapAutoRefresh: 1
+  adaptiveChunks:
+    minChunkSize: 8
+    maxChunkSize: 64
+    forceUpdateSmallMaps: 1
+  Debug_LegacyMaskMapping: 0
+--- !u!156049354 &1898221403
+Grid:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1898221401}
+  m_Enabled: 1
+  m_CellSize: {x: 1, y: 1, z: 1}
+  m_CellGap: {x: 0, y: 0, z: 0}
+  m_CellLayout: 0
+  m_CellSwizzle: 1
+--- !u!4 &1898221404
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1898221401}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &2039280402 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4325436833983905973, guid: 5fcca6734b338ac489c30bcf3ff93e02, type: 3}
@@ -12245,3 +12457,4 @@ SceneRoots:
   - {fileID: 249564348}
   - {fileID: 251769857}
   - {fileID: 1111022932}
+  - {fileID: 1898221404}

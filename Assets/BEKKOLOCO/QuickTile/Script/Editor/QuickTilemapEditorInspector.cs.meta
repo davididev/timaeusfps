@@ -1,0 +1,20 @@
+fileFormatVersion: 2
+guid: 99a46ddce6d9e46a7801324d144387a8
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - visualTree: {fileID: 9197481963319205126, guid: 548fc66e422e04aa8a525ff8c4141119,
+      type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 316416
+  packageName: Quick Tile
+  packageVersion: 1.1.2
+  assetPath: Assets/BEKKOLOCO/QuickTile/Script/Editor/QuickTilemapEditorInspector.cs
+  uploadId: 915068

@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 2d366f3d8ef9e49c2b1c38d7d0adb289
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 316416
+  packageName: Quick Tile
+  packageVersion: 1.1.2
+  assetPath: Assets/BEKKOLOCO/Shader/URPToonShader.shader
+  uploadId: 915068

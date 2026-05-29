@@ -1,0 +1,1443 @@
+{
+    "tilemaps": [
+        {
+            "tilemapName": "TargetTilemap",
+            "height": -1000.0,
+            "tiles": []
+        },
+        {
+            "tilemapName": "Tilemap_Rule_Grass_Tiles_0.25",
+            "height": 0.25,
+            "tiles": [
+                {
+                    "x": -1,
+                    "y": -7,
+                    "z": 0,
+                    "tileName": "Grass_Tiles",
+                    "color": {
+                        "r": 1.0,
+                        "g": 1.0,
+                        "b": 1.0,
+                        "a": 1.0
+                    },
+                    "ruleIndex": -1,
+                    "tile": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "x": 0,
+                    "y": -7,
+                    "z": 0,
+                    "tileName": "Grass_Tiles",
+                    "color": {
+                        "r": 1.0,
+                        "g": 1.0,
+                        "b": 1.0,
+                        "a": 1.0
+                    },
+                    "ruleIndex": -1,
+                    "tile": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "x": 1,
+                    "y": -7,
+                    "z": 0,
+                    "tileName": "Grass_Tiles",
+                    "color": {
+                        "r": 1.0,
+                        "g": 1.0,
+                        "b": 1.0,
+                        "a": 1.0
+                    },
+                    "ruleIndex": -1,
+                    "tile": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "x": 2,
+                    "y": -7,
+                    "z": 0,
+                    "tileName": "Grass_Tiles",
+                    "color": {
+                        "r": 1.0,
+                        "g": 1.0,
+                        "b": 1.0,
+                        "a": 1.0
+                    },
+                    "ruleIndex": -1,
+                    "tile": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "x": -2,
+                    "y": -6,
+                    "z": 0,
+                    "tileName": "Grass_Tiles",
+                    "color": {
+                        "r": 1.0,
+                        "g": 1.0,
+                        "b": 1.0,
+                        "a": 1.0
+                    },
+                    "ruleIndex": -1,
+                    "tile": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "x": -1,
+                    "y": -6,
+                    "z": 0,
+                    "tileName": "Grass_Tiles",
+                    "color": {
+                        "r": 1.0,
+                        "g": 1.0,
+                        "b": 1.0,
+                        "a": 1.0
+                    },
+                    "ruleIndex": -1,
+                    "tile": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "x": 2,
+                    "y": -6,
+                    "z": 0,
+                    "tileName": "Grass_Tiles",
+                    "color": {
+                        "r": 1.0,
+                        "g": 1.0,
+                        "b": 1.0,
+                        "a": 1.0
+                    },
+                    "ruleIndex": -1,
+                    "tile": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "x": 3,
+                    "y": -6,
+                    "z": 0,
+                    "tileName": "Grass_Tiles",
+                    "color": {
+                        "r": 1.0,
+                        "g": 1.0,
+                        "b": 1.0,
+                        "a": 1.0
+                    },
+                    "ruleIndex": -1,
+                    "tile": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "x": 4,
+                    "y": -6,
+                    "z": 0,
+                    "tileName": "Grass_Tiles",
+                    "color": {
+                        "r": 1.0,
+                        "g": 1.0,
+                        "b": 1.0,
+                        "a": 1.0
+                    },
+                    "ruleIndex": -1,
+                    "tile": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "x": -3,
+                    "y": -5,
+                    "z": 0,
+                    "tileName": "Grass_Tiles",
+                    "color": {
+                        "r": 1.0,
+                        "g": 1.0,
+                        "b": 1.0,
+                        "a": 1.0
+                    },
+                    "ruleIndex": -1,
+                    "tile": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "x": -2,
+                    "y": -5,
+                    "z": 0,
+                    "tileName": "Grass_Tiles",
+                    "color": {
+                        "r": 1.0,
+                        "g": 1.0,
+                        "b": 1.0,
+                        "a": 1.0
+                    },
+                    "ruleIndex": -1,
+                    "tile": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "x": 3,
+                    "y": -5,
+                    "z": 0,
+                    "tileName": "Grass_Tiles",
+                    "color": {
+                        "r": 1.0,
+                        "g": 1.0,
+                        "b": 1.0,
+                        "a": 1.0
+                    },
+                    "ruleIndex": -1,
+                    "tile": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "x": 4,
+                    "y": -5,
+                    "z": 0,
+                    "tileName": "Grass_Tiles",
+                    "color": {
+                        "r": 1.0,
+                        "g": 1.0,
+                        "b": 1.0,
+                        "a": 1.0
+                    },
+                    "ruleIndex": -1,
+                    "tile": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "x": -3,
+                    "y": -4,
+                    "z": 0,
+                    "tileName": "Grass_Tiles",
+                    "color": {
+                        "r": 1.0,
+                        "g": 1.0,
+                        "b": 1.0,
+                        "a": 1.0
+                    },
+                    "ruleIndex": -1,
+                    "tile": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "x": 4,
+                    "y": -4,
+                    "z": 0,
+                    "tileName": "Grass_Tiles",
+                    "color": {
+                        "r": 1.0,
+                        "g": 1.0,
+                        "b": 1.0,
+                        "a": 1.0
+                    },
+                    "ruleIndex": -1,
+                    "tile": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "x": 5,
+                    "y": -4,
+                    "z": 0,
+                    "tileName": "Grass_Tiles",
+                    "color": {
+                        "r": 1.0,
+                        "g": 1.0,
+                        "b": 1.0,
+                        "a": 1.0
+                    },
+                    "ruleIndex": -1,
+                    "tile": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "x": -3,
+                    "y": -3,
+                    "z": 0,
+                    "tileName": "Grass_Tiles",
+                    "color": {
+                        "r": 1.0,
+                        "g": 1.0,
+                        "b": 1.0,
+                        "a": 1.0
+                    },
+                    "ruleIndex": -1,
+                    "tile": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "x": 4,
+                    "y": -3,
+                    "z": 0,
+                    "tileName": "Grass_Tiles",
+                    "color": {
+                        "r": 1.0,
+                        "g": 1.0,
+                        "b": 1.0,
+                        "a": 1.0
+                    },
+                    "ruleIndex": -1,
+                    "tile": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "x": 5,
+                    "y": -3,
+                    "z": 0,
+                    "tileName": "Grass_Tiles",
+                    "color": {
+                        "r": 1.0,
+                        "g": 1.0,
+                        "b": 1.0,
+                        "a": 1.0
+                    },
+                    "ruleIndex": -1,
+                    "tile": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "x": -3,
+                    "y": -2,
+                    "z": 0,
+                    "tileName": "Grass_Tiles",
+                    "color": {
+                        "r": 1.0,
+                        "g": 1.0,
+                        "b": 1.0,
+                        "a": 1.0
+                    },
+                    "ruleIndex": -1,
+                    "tile": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "x": -2,
+                    "y": -2,
+                    "z": 0,
+                    "tileName": "Grass_Tiles",
+                    "color": {
+                        "r": 1.0,
+                        "g": 1.0,
+                        "b": 1.0,
+                        "a": 1.0
+                    },
+                    "ruleIndex": -1,
+                    "tile": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "x": 5,
+                    "y": -2,
+                    "z": 0,
+                    "tileName": "Grass_Tiles",
+                    "color": {
+                        "r": 1.0,
+                        "g": 1.0,
+                        "b": 1.0,
+                        "a": 1.0
+                    },
+                    "ruleIndex": -1,
+                    "tile": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "x": -8,
+                    "y": -1,
+                    "z": 0,
+                    "tileName": "Grass_Tiles",
+                    "color": {
+                        "r": 1.0,
+                        "g": 1.0,
+                        "b": 1.0,
+                        "a": 1.0
+                    },
+                    "ruleIndex": -1,
+                    "tile": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "x": -7,
+                    "y": -1,
+                    "z": 0,
+                    "tileName": "Grass_Tiles",
+                    "color": {
+                        "r": 1.0,
+                        "g": 1.0,
+                        "b": 1.0,
+                        "a": 1.0
+                    },
+                    "ruleIndex": -1,
+                    "tile": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "x": -6,
+                    "y": -1,
+                    "z": 0,
+                    "tileName": "Grass_Tiles",
+                    "color": {
+                        "r": 1.0,
+                        "g": 1.0,
+                        "b": 1.0,
+                        "a": 1.0
+                    },
+                    "ruleIndex": -1,
+                    "tile": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "x": -5,
+                    "y": -1,
+                    "z": 0,
+                    "tileName": "Grass_Tiles",
+                    "color": {
+                        "r": 1.0,
+                        "g": 1.0,
+                        "b": 1.0,
+                        "a": 1.0
+                    },
+                    "ruleIndex": -1,
+                    "tile": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "x": -4,
+                    "y": -1,
+                    "z": 0,
+                    "tileName": "Grass_Tiles",
+                    "color": {
+                        "r": 1.0,
+                        "g": 1.0,
+                        "b": 1.0,
+                        "a": 1.0
+                    },
+                    "ruleIndex": -1,
+                    "tile": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "x": -3,
+                    "y": -1,
+                    "z": 0,
+                    "tileName": "Grass_Tiles",
+                    "color": {
+                        "r": 1.0,
+                        "g": 1.0,
+                        "b": 1.0,
+                        "a": 1.0
+                    },
+                    "ruleIndex": -1,
+                    "tile": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "x": -2,
+                    "y": -1,
+                    "z": 0,
+                    "tileName": "Grass_Tiles",
+                    "color": {
+                        "r": 1.0,
+                        "g": 1.0,
+                        "b": 1.0,
+                        "a": 1.0
+                    },
+                    "ruleIndex": -1,
+                    "tile": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "x": 4,
+                    "y": -1,
+                    "z": 0,
+                    "tileName": "Grass_Tiles",
+                    "color": {
+                        "r": 1.0,
+                        "g": 1.0,
+                        "b": 1.0,
+                        "a": 1.0
+                    },
+                    "ruleIndex": -1,
+                    "tile": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "x": 5,
+                    "y": -1,
+                    "z": 0,
+                    "tileName": "Grass_Tiles",
+                    "color": {
+                        "r": 1.0,
+                        "g": 1.0,
+                        "b": 1.0,
+                        "a": 1.0
+                    },
+                    "ruleIndex": -1,
+                    "tile": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "x": -8,
+                    "y": 0,
+                    "z": 0,
+                    "tileName": "Grass_Tiles",
+                    "color": {
+                        "r": 1.0,
+                        "g": 1.0,
+                        "b": 1.0,
+                        "a": 1.0
+                    },
+                    "ruleIndex": -1,
+                    "tile": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "x": -7,
+                    "y": 0,
+                    "z": 0,
+                    "tileName": "Grass_Tiles",
+                    "color": {
+                        "r": 1.0,
+                        "g": 1.0,
+                        "b": 1.0,
+                        "a": 1.0
+                    },
+                    "ruleIndex": -1,
+                    "tile": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "x": -6,
+                    "y": 0,
+                    "z": 0,
+                    "tileName": "Grass_Tiles",
+                    "color": {
+                        "r": 1.0,
+                        "g": 1.0,
+                        "b": 1.0,
+                        "a": 1.0
+                    },
+                    "ruleIndex": -1,
+                    "tile": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "x": -5,
+                    "y": 0,
+                    "z": 0,
+                    "tileName": "Grass_Tiles",
+                    "color": {
+                        "r": 1.0,
+                        "g": 1.0,
+                        "b": 1.0,
+                        "a": 1.0
+                    },
+                    "ruleIndex": -1,
+                    "tile": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "x": -4,
+                    "y": 0,
+                    "z": 0,
+                    "tileName": "Grass_Tiles",
+                    "color": {
+                        "r": 1.0,
+                        "g": 1.0,
+                        "b": 1.0,
+                        "a": 1.0
+                    },
+                    "ruleIndex": -1,
+                    "tile": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "x": -3,
+                    "y": 0,
+                    "z": 0,
+                    "tileName": "Grass_Tiles",
+                    "color": {
+                        "r": 1.0,
+                        "g": 1.0,
+                        "b": 1.0,
+                        "a": 1.0
+                    },
+                    "ruleIndex": -1,
+                    "tile": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "x": -2,
+                    "y": 0,
+                    "z": 0,
+                    "tileName": "Grass_Tiles",
+                    "color": {
+                        "r": 1.0,
+                        "g": 1.0,
+                        "b": 1.0,
+                        "a": 1.0
+                    },
+                    "ruleIndex": -1,
+                    "tile": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "x": -1,
+                    "y": 0,
+                    "z": 0,
+                    "tileName": "Grass_Tiles",
+                    "color": {
+                        "r": 1.0,
+                        "g": 1.0,
+                        "b": 1.0,
+                        "a": 1.0
+                    },
+                    "ruleIndex": -1,
+                    "tile": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "x": 3,
+                    "y": 0,
+                    "z": 0,
+                    "tileName": "Grass_Tiles",
+                    "color": {
+                        "r": 1.0,
+                        "g": 1.0,
+                        "b": 1.0,
+                        "a": 1.0
+                    },
+                    "ruleIndex": -1,
+                    "tile": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "x": 4,
+                    "y": 0,
+                    "z": 0,
+                    "tileName": "Grass_Tiles",
+                    "color": {
+                        "r": 1.0,
+                        "g": 1.0,
+                        "b": 1.0,
+                        "a": 1.0
+                    },
+                    "ruleIndex": -1,
+                    "tile": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "x": 5,
+                    "y": 0,
+                    "z": 0,
+                    "tileName": "Grass_Tiles",
+                    "color": {
+                        "r": 1.0,
+                        "g": 1.0,
+                        "b": 1.0,
+                        "a": 1.0
+                    },
+                    "ruleIndex": -1,
+                    "tile": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "x": -7,
+                    "y": 1,
+                    "z": 0,
+                    "tileName": "Grass_Tiles",
+                    "color": {
+                        "r": 0.6096580624580383,
+                        "g": 0.9397586584091187,
+                        "b": 0.6149859428405762,
+                        "a": 1.0
+                    },
+                    "ruleIndex": -1,
+                    "tile": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "x": -6,
+                    "y": 1,
+                    "z": 0,
+                    "tileName": "Grass_Tiles",
+                    "color": {
+                        "r": 1.0,
+                        "g": 1.0,
+                        "b": 1.0,
+                        "a": 1.0
+                    },
+                    "ruleIndex": -1,
+                    "tile": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "x": -5,
+                    "y": 1,
+                    "z": 0,
+                    "tileName": "Grass_Tiles",
+                    "color": {
+                        "r": 0.6096580624580383,
+                        "g": 0.9397586584091187,
+                        "b": 0.6149859428405762,
+                        "a": 1.0
+                    },
+                    "ruleIndex": -1,
+                    "tile": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "x": -4,
+                    "y": 1,
+                    "z": 0,
+                    "tileName": "Grass_Tiles",
+                    "color": {
+                        "r": 1.0,
+                        "g": 1.0,
+                        "b": 1.0,
+                        "a": 1.0
+                    },
+                    "ruleIndex": -1,
+                    "tile": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "x": -3,
+                    "y": 1,
+                    "z": 0,
+                    "tileName": "Grass_Tiles",
+                    "color": {
+                        "r": 1.0,
+                        "g": 1.0,
+                        "b": 1.0,
+                        "a": 1.0
+                    },
+                    "ruleIndex": -1,
+                    "tile": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "x": -2,
+                    "y": 1,
+                    "z": 0,
+                    "tileName": "Grass_Tiles",
+                    "color": {
+                        "r": 1.0,
+                        "g": 1.0,
+                        "b": 1.0,
+                        "a": 1.0
+                    },
+                    "ruleIndex": -1,
+                    "tile": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "x": -1,
+                    "y": 1,
+                    "z": 0,
+                    "tileName": "Grass_Tiles",
+                    "color": {
+                        "r": 1.0,
+                        "g": 1.0,
+                        "b": 1.0,
+                        "a": 1.0
+                    },
+                    "ruleIndex": -1,
+                    "tile": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "x": 0,
+                    "y": 1,
+                    "z": 0,
+                    "tileName": "Grass_Tiles",
+                    "color": {
+                        "r": 1.0,
+                        "g": 1.0,
+                        "b": 1.0,
+                        "a": 1.0
+                    },
+                    "ruleIndex": -1,
+                    "tile": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "x": 1,
+                    "y": 1,
+                    "z": 0,
+                    "tileName": "Grass_Tiles",
+                    "color": {
+                        "r": 1.0,
+                        "g": 1.0,
+                        "b": 1.0,
+                        "a": 1.0
+                    },
+                    "ruleIndex": -1,
+                    "tile": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "x": 2,
+                    "y": 1,
+                    "z": 0,
+                    "tileName": "Grass_Tiles",
+                    "color": {
+                        "r": 1.0,
+                        "g": 1.0,
+                        "b": 1.0,
+                        "a": 1.0
+                    },
+                    "ruleIndex": -1,
+                    "tile": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "x": 3,
+                    "y": 1,
+                    "z": 0,
+                    "tileName": "Grass_Tiles",
+                    "color": {
+                        "r": 1.0,
+                        "g": 1.0,
+                        "b": 1.0,
+                        "a": 1.0
+                    },
+                    "ruleIndex": -1,
+                    "tile": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "x": 4,
+                    "y": 1,
+                    "z": 0,
+                    "tileName": "Grass_Tiles",
+                    "color": {
+                        "r": 1.0,
+                        "g": 1.0,
+                        "b": 1.0,
+                        "a": 1.0
+                    },
+                    "ruleIndex": -1,
+                    "tile": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "x": -7,
+                    "y": 2,
+                    "z": 0,
+                    "tileName": "Grass_Tiles",
+                    "color": {
+                        "r": 1.0,
+                        "g": 1.0,
+                        "b": 1.0,
+                        "a": 1.0
+                    },
+                    "ruleIndex": -1,
+                    "tile": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "x": -6,
+                    "y": 2,
+                    "z": 0,
+                    "tileName": "Grass_Tiles",
+                    "color": {
+                        "r": 0.6096580624580383,
+                        "g": 0.9397586584091187,
+                        "b": 0.6149859428405762,
+                        "a": 1.0
+                    },
+                    "ruleIndex": -1,
+                    "tile": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "x": -5,
+                    "y": 2,
+                    "z": 0,
+                    "tileName": "Grass_Tiles",
+                    "color": {
+                        "r": 0.6096580624580383,
+                        "g": 0.9397586584091187,
+                        "b": 0.6149859428405762,
+                        "a": 1.0
+                    },
+                    "ruleIndex": -1,
+                    "tile": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "x": -4,
+                    "y": 2,
+                    "z": 0,
+                    "tileName": "Grass_Tiles",
+                    "color": {
+                        "r": 0.6096580624580383,
+                        "g": 0.9397586584091187,
+                        "b": 0.6149859428405762,
+                        "a": 1.0
+                    },
+                    "ruleIndex": -1,
+                    "tile": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "x": -3,
+                    "y": 2,
+                    "z": 0,
+                    "tileName": "Grass_Tiles",
+                    "color": {
+                        "r": 0.6096580624580383,
+                        "g": 0.9397586584091187,
+                        "b": 0.6149859428405762,
+                        "a": 1.0
+                    },
+                    "ruleIndex": -1,
+                    "tile": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "x": -1,
+                    "y": 2,
+                    "z": 0,
+                    "tileName": "Grass_Tiles",
+                    "color": {
+                        "r": 1.0,
+                        "g": 1.0,
+                        "b": 1.0,
+                        "a": 1.0
+                    },
+                    "ruleIndex": -1,
+                    "tile": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "x": 0,
+                    "y": 2,
+                    "z": 0,
+                    "tileName": "Grass_Tiles",
+                    "color": {
+                        "r": 1.0,
+                        "g": 1.0,
+                        "b": 1.0,
+                        "a": 1.0
+                    },
+                    "ruleIndex": -1,
+                    "tile": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "x": 1,
+                    "y": 2,
+                    "z": 0,
+                    "tileName": "Grass_Tiles",
+                    "color": {
+                        "r": 1.0,
+                        "g": 1.0,
+                        "b": 1.0,
+                        "a": 1.0
+                    },
+                    "ruleIndex": -1,
+                    "tile": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "x": 2,
+                    "y": 2,
+                    "z": 0,
+                    "tileName": "Grass_Tiles",
+                    "color": {
+                        "r": 1.0,
+                        "g": 1.0,
+                        "b": 1.0,
+                        "a": 1.0
+                    },
+                    "ruleIndex": -1,
+                    "tile": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "x": 3,
+                    "y": 2,
+                    "z": 0,
+                    "tileName": "Grass_Tiles",
+                    "color": {
+                        "r": 1.0,
+                        "g": 1.0,
+                        "b": 1.0,
+                        "a": 1.0
+                    },
+                    "ruleIndex": -1,
+                    "tile": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "x": -6,
+                    "y": 3,
+                    "z": 0,
+                    "tileName": "Grass_Tiles",
+                    "color": {
+                        "r": 0.6096580624580383,
+                        "g": 0.9397586584091187,
+                        "b": 0.6149859428405762,
+                        "a": 1.0
+                    },
+                    "ruleIndex": -1,
+                    "tile": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "x": 0,
+                    "y": 4,
+                    "z": 0,
+                    "tileName": "Grass_Tiles",
+                    "color": {
+                        "r": 1.0,
+                        "g": 1.0,
+                        "b": 1.0,
+                        "a": 1.0
+                    },
+                    "ruleIndex": -1,
+                    "tile": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "x": 1,
+                    "y": 4,
+                    "z": 0,
+                    "tileName": "Grass_Tiles",
+                    "color": {
+                        "r": 1.0,
+                        "g": 1.0,
+                        "b": 1.0,
+                        "a": 1.0
+                    },
+                    "ruleIndex": -1,
+                    "tile": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "x": 2,
+                    "y": 4,
+                    "z": 0,
+                    "tileName": "Grass_Tiles",
+                    "color": {
+                        "r": 1.0,
+                        "g": 1.0,
+                        "b": 1.0,
+                        "a": 1.0
+                    },
+                    "ruleIndex": -1,
+                    "tile": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "x": 0,
+                    "y": 5,
+                    "z": 0,
+                    "tileName": "Grass_Tiles",
+                    "color": {
+                        "r": 1.0,
+                        "g": 1.0,
+                        "b": 1.0,
+                        "a": 1.0
+                    },
+                    "ruleIndex": -1,
+                    "tile": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "x": 1,
+                    "y": 5,
+                    "z": 0,
+                    "tileName": "Grass_Tiles",
+                    "color": {
+                        "r": 1.0,
+                        "g": 1.0,
+                        "b": 1.0,
+                        "a": 1.0
+                    },
+                    "ruleIndex": -1,
+                    "tile": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "x": 2,
+                    "y": 5,
+                    "z": 0,
+                    "tileName": "Grass_Tiles",
+                    "color": {
+                        "r": 1.0,
+                        "g": 1.0,
+                        "b": 1.0,
+                        "a": 1.0
+                    },
+                    "ruleIndex": -1,
+                    "tile": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "x": 0,
+                    "y": 6,
+                    "z": 0,
+                    "tileName": "Grass_Tiles",
+                    "color": {
+                        "r": 1.0,
+                        "g": 1.0,
+                        "b": 1.0,
+                        "a": 1.0
+                    },
+                    "ruleIndex": -1,
+                    "tile": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "x": 1,
+                    "y": 6,
+                    "z": 0,
+                    "tileName": "Grass_Tiles",
+                    "color": {
+                        "r": 1.0,
+                        "g": 1.0,
+                        "b": 1.0,
+                        "a": 1.0
+                    },
+                    "ruleIndex": -1,
+                    "tile": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "x": 2,
+                    "y": 6,
+                    "z": 0,
+                    "tileName": "Grass_Tiles",
+                    "color": {
+                        "r": 1.0,
+                        "g": 1.0,
+                        "b": 1.0,
+                        "a": 1.0
+                    },
+                    "ruleIndex": -1,
+                    "tile": {
+                        "instanceID": 0
+                    }
+                }
+            ]
+        }
+    ],
+    "placedObjects": [],
+    "tileRules": [
+        {
+            "fixBase": false,
+            "ruleName": "New Rule",
+            "tileName": "Grass_Tiles",
+            "color": {
+                "r": 0.6096580624580383,
+                "g": 0.9397586584091187,
+                "b": 0.6149859428405762,
+                "a": 1.0
+            },
+            "isVisible": true,
+            "roundedCorner": 0.0,
+            "yOffset": 0.25,
+            "sizeY": 1.0,
+            "useCustomTilemap": true,
+            "isDigLayer": false,
+            "isDiggable": true,
+            "isUndiggable": false,
+            "customTargetTilemapName": "Tilemap_Rule_Grass_Tiles_0.25",
+            "renderOrder": 25,
+            "savedDeformerHandles": [],
+            "enableMove": false,
+            "moveOffset": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "movePause": 0.0,
+            "bottomEnabled": true,
+            "bottomShape": 1,
+            "bottomSize": 8,
+            "bottomProfile": {
+                "serializedVersion": "2",
+                "m_Curve": [
+                    {
+                        "serializedVersion": "3",
+                        "time": 0.0,
+                        "value": 1.0,
+                        "inSlope": 0.0,
+                        "outSlope": 0.0,
+                        "tangentMode": 0,
+                        "weightedMode": 0,
+                        "inWeight": 0.0,
+                        "outWeight": 0.0
+                    },
+                    {
+                        "serializedVersion": "3",
+                        "time": 1.0,
+                        "value": 0.0,
+                        "inSlope": 0.0,
+                        "outSlope": 0.0,
+                        "tangentMode": 0,
+                        "weightedMode": 0,
+                        "inWeight": 0.0,
+                        "outWeight": 0.0
+                    }
+                ],
+                "m_PreInfinity": 2,
+                "m_PostInfinity": 2,
+                "m_RotationOrder": 4
+            },
+            "bottomMaterialPath": "",
+            "meshMode": 1,
+            "proceduralRadius": 0.30000001192092898,
+            "proceduralDepth": 0.4000000059604645,
+            "proceduralCurveSegments": 8,
+            "proceduralSkirtEnabled": true,
+            "proceduralSkirtWidth": 0.1550000011920929,
+            "proceduralSkirtHeight": 0.48500001430511477,
+            "proceduralSkirtSegments": 2,
+            "proceduralSkirtUVScale": 1.0,
+            "proceduralSkirtUVOffsetY": 0.3889999985694885,
+            "proceduralSkirtMaterialMode": 0,
+            "proceduralSkirtMaskCurve": {
+                "serializedVersion": "2",
+                "m_Curve": [
+                    {
+                        "serializedVersion": "3",
+                        "time": 0.0,
+                        "value": 0.23999999463558198,
+                        "inSlope": -0.13636364042758943,
+                        "outSlope": -0.13636364042758943,
+                        "tangentMode": 35,
+                        "weightedMode": 0,
+                        "inWeight": 0.0,
+                        "outWeight": 0.3333333432674408
+                    },
+                    {
+                        "serializedVersion": "3",
+                        "time": 0.2199999988079071,
+                        "value": 0.20999999344348908,
+                        "inSlope": -0.12175322324037552,
+                        "outSlope": -0.12175322324037552,
+                        "tangentMode": 35,
+                        "weightedMode": 0,
+                        "inWeight": 0.3333333432674408,
+                        "outWeight": 0.3333333432674408
+                    },
+                    {
+                        "serializedVersion": "3",
+                        "time": 0.5,
+                        "value": 0.18000000715255738,
+                        "inSlope": 0.01785716414451599,
+                        "outSlope": 0.01785716414451599,
+                        "tangentMode": 35,
+                        "weightedMode": 0,
+                        "inWeight": 0.3333333432674408,
+                        "outWeight": 0.3333333432674408
+                    },
+                    {
+                        "serializedVersion": "3",
+                        "time": 0.7799999713897705,
+                        "value": 0.2199999988079071,
+                        "inSlope": 0.11688309907913208,
+                        "outSlope": 0.11688309907913208,
+                        "tangentMode": 35,
+                        "weightedMode": 0,
+                        "inWeight": 0.3333333432674408,
+                        "outWeight": 0.3333333432674408
+                    },
+                    {
+                        "serializedVersion": "3",
+                        "time": 1.0,
+                        "value": 0.23999999463558198,
+                        "inSlope": 0.09090906381607056,
+                        "outSlope": 0.09090906381607056,
+                        "tangentMode": 35,
+                        "weightedMode": 0,
+                        "inWeight": 0.3333333432674408,
+                        "outWeight": 0.0
+                    }
+                ],
+                "m_PreInfinity": 2,
+                "m_PostInfinity": 2,
+                "m_RotationOrder": 4
+            },
+            "proceduralFloorMaterialPath": "Assets/BEKKOLOCO/QuickTile/Resources/QuickTile/Material/Grass.mat",
+            "proceduralWallMaterialPath": "Assets/BEKKOLOCO/QuickTile/Resources/QuickTile/Material/Stone wall.mat",
+            "proceduralCeilingMaterialPath": "Assets/BEKKOLOCO/QuickTile/Resources/QuickTile/Material/Grass_skirt.mat",
+            "proceduralBottomMaterialPath": "Assets/BEKKOLOCO/QuickTile/Resources/QuickTile/Material/Stone wall.mat",
+            "proceduralDigMaterialPath": "Assets/BEKKOLOCO/QuickTile/Resources/QuickTile/Material/Digg.mat",
+            "deformerShape": 0,
+            "deformerRadius": 5.0,
+            "deformerFalloff": 2,
+            "deformerGaussianSharpness": 1.5,
+            "deformerHeightPerUnitY": 1.0,
+            "deformerYDeformRatio": 1.0,
+            "deformerInvertDirection": false,
+            "deformerLinkRadiusToScale": false,
+            "deformerRadiusLinkMode": 0,
+            "deformerUseYMin": false,
+            "deformerYMin": 0.0,
+            "deformerYMinRelativeToHandle": false,
+            "deformerYFeather": 0.0,
+            "deformerClampWorldMinY": false,
+            "deformerWorldMinY": 0.0,
+            "deformerYMinFalloff": 2,
+            "deformerYMinGaussianSharpness": 1.5,
+            "proceduralBottomMode": 3,
+            "proceduralBottomBevelInset": 0.10000000149011612,
+            "proceduralBottomBevelDepth": 0.15000000596046449,
+            "proceduralBottomBevelSegments": 4,
+            "proceduralBottomBevelProfile": 0,
+            "proceduralBottomNoiseScale": 0.9599999785423279,
+            "proceduralBottomNoiseAmplitude": 5.980000019073486,
+            "proceduralBottomIslandSharpness": 1.9900000095367432,
+            "proceduralBottomIslandSmooth": 0.0,
+            "proceduralBottomNoiseResolution": 1,
+            "proceduralBottomNoiseSeed": 0.0
+        }
+    ],
+    "paths": [],
+    "paintedTextures": [],
+    "texturePaintRulesList": [
+        {
+            "ruleName": "Texture 1",
+            "textureIndex": 0,
+            "materialPath": "Assets/BEKKOLOCO/QuickTile/Resources/QuickTile/Material/Grass.mat",
+            "albedoPath": "Assets/BEKKOLOCO/QuickTile/Texture/TX_checker.png",
+            "normalPath": "",
+            "heightPath": "",
+            "emissionPath": "",
+            "emissionColor": {
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "a": 1.0
+            },
+            "textureScale": 0.9200000166893005,
+            "blendSharpness": 0.10000000149011612,
+            "noiseScale": 2.880000114440918,
+            "noiseType": 0,
+            "removeVegetation": false,
+            "vegetationEntries": []
+        },
+        {
+            "ruleName": "Texture 2",
+            "textureIndex": 1,
+            "materialPath": "Assets/BEKKOLOCO/QuickTile/Resources/QuickTile/Material/Grass.mat",
+            "albedoPath": "Assets/BEKKOLOCO/QuickTile/Texture/TX_grass_albedo.png",
+            "normalPath": "",
+            "heightPath": "",
+            "emissionPath": "",
+            "emissionColor": {
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "a": 1.0
+            },
+            "textureScale": 0.10000000149011612,
+            "blendSharpness": 1.0,
+            "noiseScale": 1.0,
+            "noiseType": 0,
+            "removeVegetation": false,
+            "vegetationEntries": []
+        },
+        {
+            "ruleName": "Texture 3",
+            "textureIndex": 2,
+            "materialPath": "Assets/BEKKOLOCO/QuickTile/Resources/QuickTile/Material/Grass.mat",
+            "albedoPath": "",
+            "normalPath": "",
+            "heightPath": "",
+            "emissionPath": "",
+            "emissionColor": {
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "a": 1.0
+            },
+            "textureScale": 1.0,
+            "blendSharpness": 1.0,
+            "noiseScale": 1.0,
+            "noiseType": 0,
+            "removeVegetation": false,
+            "vegetationEntries": []
+        }
+    ],
+    "levelProperties": [],
+    "gameObjectRules": [],
+    "centerOriginToSurfaceMass": true,
+    "positionsCenteredInCells": true
+}

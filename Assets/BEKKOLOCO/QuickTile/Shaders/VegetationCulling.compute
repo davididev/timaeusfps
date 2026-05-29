@@ -1,0 +1,72 @@
+// VegetationCulling.compute
+// GPU frustum + distance culling for vegetation instances.
+// Reads all instances, writes visible ones + updates indirect args.
+
+#pragma kernel CSMain
+
+struct VegetationInstance
+{
+    float3 position;
+    float rotation;
+    float scale;
+    uint packedGroundColor;
+};
+
+// Input: all instances
+StructuredBuffer<VegetationInstance>   _AllInstances;
+
+// Output: visible instances (same struct)
+RWStructuredBuffer<VegetationInstance> _VisibleInstances;
+
+// Indirect draw args: [indexCount, instanceCount, startIndex, baseVertex, startInstance]
+RWStructuredBuffer<uint>              _ArgsBuffer;
+
+// Camera frustum planes (6 planes, each float4: normal.xyz + distance.w)
+float4 _FrustumPlanes[6];
+
+// Total instance count
+uint _InstanceCount;
+
+// Max draw distance (squared internally)
+float  _MaxDistance;
+float3 _CameraPosition;
+
+[numthreads(64, 1, 1)]
+void CSMain(uint3 id : SV_DispatchThreadID)
+{
+    if (id.x >= _InstanceCount)
+        return;
+
+    VegetationInstance inst = _AllInstances[id.x];
+
+    // ── Distance culling ──
+    float3 diff = inst.position - _CameraPosition;
+    float distSq = dot(diff, diff);
+    float maxDistSq = _MaxDistance * _MaxDistance;
+    if (distSq > maxDistSq)
+        return;
+
+    // ── Frustum culling (sphere test) ──
+    // Approximate bounding sphere radius from scale
+    float radius = inst.scale * 2.0;
+
+    bool visible = true;
+    [unroll]
+    for (int i = 0; i < 6; i++)
+    {
+        float dist = dot(_FrustumPlanes[i].xyz, inst.position) + _FrustumPlanes[i].w;
+        if (dist < -radius)
+        {
+            visible = false;
+            break;
+        }
+    }
+
+    if (!visible)
+        return;
+
+    // Atomically append to visible buffer
+    uint visibleIndex;
+    InterlockedAdd(_ArgsBuffer[1], 1, visibleIndex);
+    _VisibleInstances[visibleIndex] = inst;
+}
