@@ -28,6 +28,7 @@ public class StarPickup : MonoBehaviour
     {
         if (other.tag == "Player")
         {
+            UI_GameOverlay.DamageFlash = new Color(1f, 1f, 0f, 0.1f);
             //TODO: Add sound FX and animation
             other.SendMessage("AddStars", Amount);
             gameObject.SetActive(false);
