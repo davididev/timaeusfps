@@ -37,6 +37,8 @@ public class PlayerMovement : MonoBehaviour
 
     
 
+    
+
     private void Look_performed()
     {
         Vector2 axis = action.Player.Look.ReadValue<Vector2>();
@@ -71,7 +73,7 @@ public class PlayerMovement : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        GetComponent<CharacterController>().Move(Vector3.down * 5.0f);  //Move the player directly on to the floor
     }
     
 

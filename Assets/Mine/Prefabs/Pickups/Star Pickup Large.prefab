@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4483305777966255049}
   - component: {fileID: 2933714174493234979}
   m_Layer: 11
-  m_Name: Star Pickup Small
+  m_Name: Star Pickup Large
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -57,15 +57,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: cf4f391b6744d0a4ca84ac337c673885, type: 3}
       propertyPath: m_LocalScale.x
-      value: 4
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cf4f391b6744d0a4ca84ac337c673885, type: 3}
       propertyPath: m_LocalScale.y
-      value: 4
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cf4f391b6744d0a4ca84ac337c673885, type: 3}
       propertyPath: m_LocalScale.z
-      value: 4
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cf4f391b6744d0a4ca84ac337c673885, type: 3}
       propertyPath: m_LocalPosition.x
@@ -163,8 +163,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d30b976a942b9424595ff38b21b3afdd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::StarPickup
-  Amount: 1
-  MaxScale: 4
+  Amount: 3
+  MaxScale: 16
   soundFX: {fileID: 8300000, guid: 1a5d040acd91c6842a8b682de87fd704, type: 3}
 --- !u!65 &8041053099689420884
 BoxCollider:
