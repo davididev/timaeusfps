@@ -49,6 +49,7 @@ public class GameObjectPool : MonoBehaviour
         {
             GameObject inst = GameObject.Instantiate(prefab);
             tempPool[i] = inst;
+            inst.SetActive(false);
         }
         currentList.Add(s, tempPool);
     }
