@@ -17,6 +17,7 @@ public class CanvasRoot : MonoBehaviour
     }
     [SerializeField]
     public IndivPage[] pages;
+    [SerializeField] AudioClip switchWindowSound, unpauseWindowSound;
     const float SCALE_PER_SECOND = 2.0f;
     const float DISABLE_ME_SCALE = 0.001f;
     int current_page_id = -1;
@@ -39,12 +40,25 @@ public class CanvasRoot : MonoBehaviour
 
     private void Start()
     {
-        SetPageID(0);
+        SetPageID(0, true);
         
     }
 
-    public void SetPageID(int pageID)
+    public void SetPageID(int pageID, bool supressSound = false)
     {
+        if (supressSound == false)
+        {
+            if(pageID == 0)
+                SoundFXPlayer.PlaySound(unpauseWindowSound, transform.position, 100.0f); 
+            else
+            {
+                float pitch = 0.8f + (pageID * 0.2f);
+                SoundFXPlayer.PlaySound(switchWindowSound, transform.position, 100.0f, 1f, 1f, pitch);
+            }
+                
+                  
+        }
+            
         current_page_id = pageID;
         if (pageID == 0)
         {
