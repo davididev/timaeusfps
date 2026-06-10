@@ -31,13 +31,16 @@ public class PlayerMovement : MonoBehaviour
     {
         action = new InputSystem_Actions();
         action.Player.Jump.performed += Jump_performed;
-        
+        action.Player.Pause.performed += OnPausePressed;
         action.Player.Enable();
+        
     }
 
-    
-
-    
+    private void OnPausePressed(InputAction.CallbackContext obj)
+    {
+        Debug.Log("Pause");
+        CanvasRoot.PausePressedTrigger = true;  //Called here to avoid making another copy of InputSystem_Actions
+    }
 
     private void Look_performed()
     {
